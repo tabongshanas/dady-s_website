@@ -5,7 +5,7 @@
 }
 html {
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 a {
     text-decoration: none;
@@ -221,6 +221,8 @@ ul li ul li:hover .sub-menu-2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
+    padding-top: 30px;
     position: relative;
     z-index: 1;
 }
@@ -251,7 +253,7 @@ ul li ul li:hover .sub-menu-2 {
     animation-delay: 1s;
 }
 .ed {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 .ed2 {
     margin-left: -100px;
@@ -359,5 +361,189 @@ ul li ul li:hover .sub-menu-2 {
 
 
 .about-container {
-    border: 1px solid red;
+    background-color: #f7f5f5;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.about-header {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: crimson;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-content-container {
+    display: flex;
+    justify-content: center;
+}
+.about-content-image {
+    background-image: url('/images/about.jpg');
+    background-size: cover;
+    width: 500px;
+    height: 700px;
+    margin: 0px 60px;
+}
+.about-content-image-layer:hover {
+    cursor: zoom-in;
+}
+.about-content-image-layer {
+    width: 100%;
+    height: 100%;
+    /* margin-top: -200px; */
+    background-color: rgba(0, 0, 0, 0.774);
+    display: none;
+}
+.main-about-content {
+    padding-top: 40%;
+}
+.main-about-content:hover {
+    cursor: text;
+}
+.main-about-content p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.main-about-content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: crimson;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.social-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icon-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+    color: white;
+}
+.social-icon-text:hover {
+    cursor: text;
+}
+.social-icon a {
+    font-size: 50px;
+    text-decoration: none;
+    color: crimson;
+}
+.social-icon a:hover {
+    cursor: pointer;
+    color: rgb(158, 16, 45);
+}
+.about-content-image-layer:hover .social-icon {
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-content-image:hover .about-content-image-layer {
+    display: block;
+}
+
+.site-image-text-header {
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+}
+.site-image-text {
+    font-size: 22px;
+    color: rgb(116, 114, 114);
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.site-image-text2 {
+    line-height: 40px;
+    padding-left: 30px;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+.site-image-text2 .fa {
+    color: crimson;
+    font-size: 20px;
+}
+.site-image-text2 span {
+    font-size: 21px;
+    color: rgb(116, 114, 114);
+}
+.secondary-btn-expan {
+    display: flex;
+    justify-content: flex-end;
+}
+.secondary-btn {
+    width: fit-content;
+    text-transform: capitalize;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: crimson;
+    color: white;
+    margin-top: 100px;
+    transition: 0.3s;
+}
+.secondary-btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid crimson;
+    color: black;
+}
+
+@media (max-width: 1133px) {
+    .about-header {
+        font-size: 30px;
+    }
+    .about-content-image {
+        height: 600px;
+    }
+    .main-about-content {
+        margin-top: 100px;
+    }
+    .main-about-content p {
+        font-size: 20px;
+    }
+    .main-about-content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .social-icon-text {
+        font-size: 25px;
+    }
+    .social-icon .fa {
+        font-size: 30px;
+    }
+    .site-image-text-header {
+        font-size: 22px;
+    }
+    .secondary-btn {
+        font-size: 20px;
+    }
+    .about-content-image-layer {
+        margin-top: -100px;
+    }
+}
+@media (max-width: 982px) {
+    .about-content-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .site-image-text-header {
+        text-align: center;
+    }
+    .about-content-image {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 430px) {
+    .secondary-btn-expan {
+        display: flex;
+        justify-content: center;
+    }
+    .about-content-image {
+        margin: 0px;
+        height: 500px;
+    }
 }
