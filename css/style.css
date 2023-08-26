@@ -671,3 +671,98 @@ ul li ul li:hover .sub-menu-2 {
         margin-top: 30px;
     }
 }
+
+
+
+.web-container {
+    margin-top: 180px;
+    display: flex;
+}
+.web-image1 {
+    width: 50%;
+}
+.main-web-image1 {
+    width: 100%;
+    height: 480px;
+}
+.web-image2 {
+    width: 50%;
+    height: 480px;
+    background-image: url('/images/landing_page_image.png.jpg');
+    /* background-size: cover; */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.web-image2::before {
+    content: 'shanas';
+    background-color: black;
+    opacity: 0.8;
+    width: 50%;
+    height: 480px;
+    position: absolute;
+    z-index: -1;
+}
+.web-image2-content {
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.web-image2-content h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    letter-spacing: 5px;
+}
+.web-image2-text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    line-height: 38px;
+}
+.web-image2 .secondary-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    white-space: nowrap;
+}
+.web-image2 .secondary-btn:hover {
+    cursor: pointer;
+    color: crimson;
+}
+.web-image2-group {
+    padding-left: 150px;
+}
+
+@media (max-width: 1144px) {
+    .web-image2-content h2 {
+        font-size: 25px;
+    }
+    .web-image2-text {
+        font-size: 18px;
+    }
+    .web-image2-group {
+        margin-left: -50px;
+    }
+}
+@media (max-width: 849px) {
+    .web-image2-group {
+        margin-left: -100px;
+    }
+}
+@media (max-width: 430px) {
+    .web-image2-group .secondary-btn {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .web-image2-group {
+        margin-left: -130px;
+    }
+    .web-image2-content h2 {
+        font-size: 15px;
+    }
+    .web-image2-text {
+        font-size: 12px;
+    }
+}
