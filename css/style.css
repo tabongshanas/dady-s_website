@@ -94,7 +94,7 @@ ul li:hover .sub-menu-1 {
 }
 .sub-menu-2.ed1 {
     position: absolute;
-    left: 166px;
+    left: 171px;
     top: 100px;
 }
 .sub-menu-2.ed1 ul li {
@@ -575,4 +575,99 @@ ul li ul li:hover .sub-menu-2 {
     width: 300px;
     height: 300px;
     margin: 20px 30px;
+}
+
+
+
+.service-container {
+    margin-top: 150px;
+}
+.main-service-container {
+    display: flex;
+    justify-content: center;
+}
+.main-service {
+    color: #333;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+.main-service:hover {
+    box-shadow: 0px 0px 20px;
+}
+.service-icon {
+    font-size: 50px;
+    text-align: center;
+}
+.service-icon .fa:hover {
+    cursor: pointer;
+}
+.service-header {
+    text-transform: capitalize;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -10px;
+}
+.service-group {
+    transition: 0.3s;
+}
+.service-group:hover {
+    color: crimson;
+}
+.service-text {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+.main-service-container .secondary-btn {
+    margin-top: 20px;
+    margin-left: 50%;
+    background-color: transparent;
+    border: 2px solid crimson;
+    color: crimson;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+.main-service-container .secondary-btn:hover {
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+.main-service-container.ed {
+    margin-top: 30px;
+}
+
+@media (max-width: 1367px) {
+    .service-icon .fa {
+        font-size: 40px;
+    }
+    .service-header {
+        font-size: 30px;
+    }
+    .service-text {
+        font-size: 18px;
+    }
+    .main-service-container .secondary-btn {
+        font-size: 15px;
+    }
+    .service-container .about-header {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1097px) {
+    .main-service-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-service.pr {
+        margin-top: 30px;
+    }
+    .service-container .about-header {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1066px) {
+    .main-service.pr2 {
+        margin-top: 30px;
+    }
 }
