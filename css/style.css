@@ -320,6 +320,10 @@ ul li ul li:hover .sub-menu-2 {
     color: white;
     background-color: crimson;
 }
+.btn:active {
+    background-color: transparent;
+}
+
 
 @keyframes text-animation-box {
     50% {
@@ -371,7 +375,7 @@ ul li ul li:hover .sub-menu-2 {
     color: crimson;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .about-content-container {
     display: flex;
@@ -551,13 +555,14 @@ ul li ul li:hover .sub-menu-2 {
 
 
 .partner-container {
-    margin-top: 60px;
+    margin-top: 200px;
 }
 .partner-header {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .partner-image-container {
     margin-top: 30px;
@@ -572,7 +577,7 @@ ul li ul li:hover .sub-menu-2 {
     height: 700px; */
 }
 .main-partner-image {
-    width: 300px;
+    width: 400px;
     height: 300px;
     margin: 20px 30px;
 }
@@ -580,7 +585,7 @@ ul li ul li:hover .sub-menu-2 {
 
 
 .service-container {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 .main-service-container {
     display: flex;
@@ -607,6 +612,9 @@ ul li ul li:hover .sub-menu-2 {
     font-size: 40px;
     text-align: center;
     margin-top: -10px;
+}
+.service-header p {
+    margin: 15px 0px;
 }
 .service-group {
     transition: 0.3s;
